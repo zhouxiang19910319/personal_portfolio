@@ -3,6 +3,7 @@ body {
   min-width: 30rem;
 }
 
+
 /*header section*/
 header {
   background-color: #E0E1E2;
@@ -71,16 +72,13 @@ nav ul li {
   display: none;
 }
 
-/*about me*/
-#about_me {
-  display: grid;
-}
 
+/*about me*/
 .section_title {
   font-size: 1.875rem;
-  font-family: 'Pontano Sans', sans-serif;
-  letter-spacing: .3em;
-  color: #4B4440;
+  font-family: "Pontano Sans", sans-serif;
+  letter-spacing: 0.6rem;
+  color: #4b4440;
   text-align: center;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -88,23 +86,28 @@ nav ul li {
 
 #profile_pic {
   margin: 1.25rem auto;
+  display: block;
+  text-align: center;
 }
 
 #kicker {
-  margin: 20px auto;
-  font-family: 'Pontano Sans', sans-serif;
-  letter-spacing: .2em;
-}
-
-#my_info {
-  margin: 40px auto;
-  list-style-type: none;
-  font-family: 'Pontano Sans', sans-serif;
-  line-height: 1.8em;
+  margin: 5rem auto;
+  font-family: "Pontano Sans", sans-serif;
+  letter-spacing: 0.3rem;
+  text-align: center;
 }
 
 .card {
   border-radius: 0;
+  margin: 1.25rem 0;
+  list-style-type: none;
+  font-family: "Pontano Sans", sans-serif;
+  line-height: 1.8rem;
+}
+
+#text_wall {
+  display: flex;
+  justify-content: center;
 }
 
 /*Work*/

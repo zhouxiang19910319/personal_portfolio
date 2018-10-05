@@ -110,70 +110,81 @@ nav ul li {
   justify-content: center;
 }
 
-/*Work*/
+/*work section*/
 #work {
   background-color: #E0E1E2;
 }
 
-#gallery {
-  width: 75%;
-  margin: 0 auto;
+.grid {
+  list-style-type: none;
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  padding-bottom: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 40rem));
+  grid-gap: 1rem;
+  align-content: center;
+  justify-content: center;
+
+  padding-bottom: 4rem;
 }
 
 .work_showcase {
-  display: block;
   width: 100%;
 }
 
-/*form*/
 
+/*these does not work i dont know why*/
+.work_section_a:hover,
+.work_section_a:focus {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .16);
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in;
+}
+
+
+
+/*form*/
 form {
   width: 40%;
   margin: 0 auto;
   padding: 40px 0;
 }
 
-.form-control {
+.form-group .form-control {
   border-radius: 0;
 }
 
-.form-control:focus {
+.form-group .form-control:focus {
   box-shadow: none;
   border: 1px solid #23B6C7;
 }
 
-.form-control::placeholder {
+.form-group .form-control::placeholder {
   font-size: 17px;
   font-family: 'Pontano Sans', sans-serif;
 }
 
 input,
-text-area {
+textarea {
   font-family: 'Pontano Sans', sans-serif;
   letter-spacing: .1em;
 }
 
-textarea {
-  height: 10rem;
-}
-
-.btn {
+.form-group .btn {
   background-color: #23B6C7;
   color: white;
   border-radius: 0;
 }
 
-.btn:hover {
+.form-group .btn:hover {
   cursor: pointer;
 }
 
 /*footer*/
-footer {
+#footer_wrap {
   background-color: #E0E1E2;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
 }
 
 .footer_a {
